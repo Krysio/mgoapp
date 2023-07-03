@@ -1,0 +1,35 @@
+.quiz {
+  display: grid;
+  gap: .3rem;
+  grid-template-areas:
+    "label label"
+    "input button";
+}
+
+.label { grid-area: label; }
+.input { grid-area: input; }
+.button { grid-area: button; }
+
+.input {
+  padding: .2em .5em;
+}
+
+.button {
+  padding: .2em .5em;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.answer {
+  margin: .1em;
+  padding: .2em .5em;
+  border: solid 1px #ffffff99;
+  cursor: pointer;
+}
+
+.answer:hover {
+  background-color: #ffffff11;
+}
